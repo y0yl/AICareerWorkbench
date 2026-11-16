@@ -1,0 +1,15 @@
+/* 打印：只输出当前文档（规划书 / 简历 / Model Card），强制浅色 */
+:root, :root[data-theme] {
+  --bg: #fff; --bg-1: #fafafa; --bg-2: #fff; --bg-3: #f2f2f2; --line: #ddd; --line-2: #ccc; --line-3: #aaa;
+  --text: #111; --text-2: #333; --text-3: #666; --text-4: #999;
+  --accent: #cdf545; --accent-line: #4a7000; --accent-soft: rgba(150, 196, 0, .15); --target: #2563d9; --loss: #d0451b; --warn: #a06a00; --ai: #6a4de0;
+}
+html, body, .app, .main { height: auto !important; overflow: visible !important; display: block !important; background: #fff !important; }
+.topbar, .rail, .adam-fab, .drawer, #toasts, .page-head, .tabs, .doc-bar, .row-end, .tooltip { display: none !important; }
+body.is-printing * { visibility: hidden; }
+body.is-printing .printing, body.is-printing .printing * { visibility: visible; }
+body.is-printing .printing { position: absolute; left: 0; top: 0; width: 100%; max-width: none; border: 0; box-shadow: none; padding: 0; margin: 0; }
+.paper, .mcard { border: 0 !important; box-shadow: none !important; }
+.prose h2 { break-after: avoid; }
+.prose table, .mc-grid section { break-inside: avoid; }
+@page { margin: 16mm 14mm; }

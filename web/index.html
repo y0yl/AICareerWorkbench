@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Epoch · AI 专业生涯训练台</title>
+  <meta name="description" content="为人工智能专业学生打造的职业生涯规划学习实践工作台：把职业目标写成目标函数，把经历当作训练样本，沿着梯度一步步收敛。">
+  <meta name="theme-color" content="#efede6">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Epoch">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preload" href="fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/views.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  <script src="js/theme-init.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <div class="app bare" id="app">
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="Epoch 首页">
+        <svg class="brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+          <path d="M1 6V1h5M20 1h5v5M25 20v5h-5M6 25H1v-5" stroke="var(--line-3)" stroke-width="1.2"/>
+          <path d="M5 7c3.5 0 4.5 11 9.5 11 3 0 4.5-1.3 6.5-1.3" stroke="var(--line-3)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M5 7c3.5 0 4.5 11 9.5 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="14.5" cy="18" r="2.6" fill="currentColor"/>
+        </svg>
+        <span class="brand-word">EPOCH</span>
+        <span class="brand-sub">生涯训练台</span>
+      </a>
+      <div class="statusline" id="statusline"></div>
+      <div class="top-actions">
+        <button class="search-btn" id="paletteBtn" aria-label="命令面板"><svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg><span class="lbl">跳转 / 操作</span><span class="kbd">Ctrl K</span></button>
+        <button class="icon-btn" id="themeBtn" aria-label="切换主题"></button>
+        <button class="icon-btn" id="userBtn" aria-label="账号与同步"></button>
+      </div>
+    </header>
+    <nav class="rail" id="rail" aria-label="主导航"></nav>
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+
+  <button class="adam-fab hidden" id="adamFab" aria-label="打开 AI 导师树形图设计者">
+    <span class="af-orb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9.5" y="4" width="5" height="5.5" rx="1"/><path d="M2.5 5h5v4.5h-5zM16.5 5h5v4.5h-5zM5 5v4.5M19 5v4.5M7.5 7.25h2M14.5 7.25h2M12 9.5v3.3M12 12.8l-5 4.7M12 12.8v5.2M12 12.8l5 4.7"/><circle cx="6.3" cy="19" r="1.5"/><circle cx="12" cy="19.6" r="1.5"/><circle cx="17.7" cy="19" r="1.5"/></svg></span>
+    <span class="af-text"><b>问树形图设计者</b><span>TREE DIAGRAM · AI 导师</span></span>
+  </button>
+  <aside class="drawer" id="adam" aria-label="AI 导师树形图设计者" aria-hidden="true"></aside>
+  <noscript>Epoch 需要启用 JavaScript。</noscript>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# /etc/caddy/Caddyfile 中 www.yi2006.me 站点的 Epoch 部分（线上实际配置）
+# 应用挂在子路径 /AICareerWorkbench/，handle_path 去掉前缀后转发给 127.0.0.1:8080
+# 全局选项里已配置 Cloudflare trusted_proxies + client_ip_headers CF-Connecting-IP，{client_ip} 即真实访客 IP
+
+	redir /AICareerWorkbench /AICareerWorkbench/ 308
+	handle_path /AICareerWorkbench/* {
+		@sse path /api/ai/*
+		reverse_proxy @sse 127.0.0.1:8080 {
+			header_up X-Real-IP {client_ip}
+			flush_interval -1          # SSE 流式输出不缓冲
+			transport http {
+				read_timeout 180s
+			}
+		}
+		reverse_proxy 127.0.0.1:8080 {
+			header_up X-Real-IP {client_ip}
+		}
+	}

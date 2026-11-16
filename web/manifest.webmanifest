@@ -1,0 +1,86 @@
+{
+  "name": "Epoch · AI 专业生涯训练台",
+  "short_name": "Epoch",
+  "description": "把职业目标写成目标函数，把经历当作训练样本，沿着梯度一步步收敛。",
+  "lang": "zh-CN",
+  "id": "./",
+  "start_url": "./#/console",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#efede6",
+  "theme_color": "#efede6",
+  "categories": [
+    "education",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "今天的任务",
+      "short_name": "今日任务",
+      "url": "./#/console",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "问树形图设计者",
+      "short_name": "问导师",
+      "url": "./#/console?adam=1",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "记录一个训练样本",
+      "short_name": "记录样本",
+      "url": "./#/dataset?new=1",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "错题复测",
+      "short_name": "错题复测",
+      "url": "./#/validate?tab=hard",
+      "icons": [
+        {
+          "src": "icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
