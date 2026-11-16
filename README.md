@@ -106,3 +106,7 @@ python3 tools/build_curricula.py
 - **调整拒答范围 / 保密规则**：`server/guard.py`（`GUARD` 为提示词规则，`_ID` / `_INJECT` / `_OFFTOPIC` 为预检正则，`SELF_ID_RE` 为输出过滤）
 - **调整课程→能力映射**：`tools/build_curricula.py` 中的 `RULES`，改完重新运行脚本
 - **修改 loss 公式**：`web/js/core/model.js` 的 `lossOf`，并同步「设置 → 算法说明」
+
+## 许可证
+
+[MIT](LICENSE)
